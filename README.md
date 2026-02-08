@@ -56,7 +56,6 @@ be comfortable writing Go programs.
 - Build a tiny kubectl-like CLI that talks to your API server 
 - Controller + Work Queue: gRPC server stores desired state, controller subscribes via stream, reconciles, and reports status back via gRPC 
 
----
 ## Phase 2 — Linux kernel interfaces
 
 ### Goal
@@ -76,7 +75,6 @@ understanding kernel, how to interact with it, and what containers actually rely
 - Build a cgroup v2 limiter: run a process and apply CPU/memory limits (in VM), then observe behavior
 - Strace a simple Go server and write a short “syscalls used” summary (open/read/write/socket/epoll)
 
----
 ## Phase 3 — etcd fundamentals
 
 ### Goal
@@ -95,7 +93,6 @@ Mini-project ideas
 - Build a “config rollout” toy: update a key, watchers apply it to a local file and report status
 - Build a failure demo: kill etcd leader (3-node cluster) and observe re-election + watch continuity
 
----
 ## Phase 4 — containerd + controlling containers (VM strongly recommended)
 
 ### Goal
@@ -112,8 +109,7 @@ understand the container runtime boundary and control containers programmaticall
 - Build a Go program using containerd client: pull image → create → start → stop → delete
 - Build a “run workload” CLI: run image cmd, ps, logs, stop
 - Build a simple health watcher: periodically check running tasks and restart if exited
-
---- 
+ 
 ## Phase 5 — Mini Kubernetes-style orchestrator
 
 ### Goal:
