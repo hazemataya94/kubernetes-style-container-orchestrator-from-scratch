@@ -38,22 +38,24 @@ This is a **learning project**, not a product.
 
 The project is structured as a series of learning phases. Each phase builds on the previous one.
 
-### Phase 1 — Golang fundamentals for systems
-Focus:
+## Phase 1 — Golang fundamentals for systems (mostly macOS)
+
+### Goal
+be comfortable writing Go programs.
+
+### Topics
 - concurrency (goroutines, channels)
 - networking (HTTP, gRPC)
 - APIs, CLIs, testing
 - controller-style loops
 
-Outcome:
-- small API servers
-- watch-like mechanisms
-- reconciliation logic
-
 ---
+## Phase 2 — Linux kernel interfaces
 
-### Phase 2 — Linux kernel interfaces
-Focus:
+### Goal
+understanding kernel, how to interact with it, and what containers actually rely on.
+
+### Topics
 - processes, signals, `/proc`
 - namespaces and cgroups
 - filesystem mounts
@@ -61,54 +63,48 @@ Focus:
 - Go programs that interact with kernel concepts
 
 ---
+## Phase 3 — etcd fundamentals
 
-### Phase 3 — etcd fundamentals
-Focus:
+### Goal
+understand etcd as a strongly-consistent key-value store with watch semantics.
+
+### Topics
 - Raft and leader election
 - MVCC and revisions
 - watches and event streams
 
-Outcome:
-- controllers reacting to state changes
-- understanding why Kubernetes depends on etcd
-
 ---
+## Phase 4 — containerd + controlling containers (VM strongly recommended)
 
-### Phase 4 — containerd & container runtime boundary
-Focus:
+### Goal
+understand the container runtime boundary and control containers programmatically.
+
+### Topics
 - OCI images vs containers
 - containerd architecture
 - CRI concepts
 
-Outcome:
-- programmatic container lifecycle control
-- bridging orchestrator logic to a real runtime
+--- 
+## Phase 5 — Mini Kubernetes-style orchestrator
 
----
-
-### Phase 5 — Mini Kubernetes-style orchestrator
-Focus:
+### Goal:
+Build a minimal orchestrator using VMs -Virtual Machies- that feels like Kubernetes
 - API server
 - persistent state
 - reconciliation
 - node agents
 - control plane concepts
 
-Outcome:
-- a minimal, Kubernetes-style orchestrator
-- deep understanding of core Kubernetes ideas
-
 ---
 
 ## How to use this repository
+
+This repo is meant to be explored, not consumed passively.
 
 - Read the code
 - Read the notes
 - Run the experiments
 - Break things
-- Compare everything to real Kubernetes behavior
-
-This repo is meant to be explored, not consumed passively.
 
 ---
 
