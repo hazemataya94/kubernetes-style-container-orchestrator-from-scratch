@@ -38,7 +38,7 @@ This is a **learning project**, not a product.
 
 The project is structured as a series of learning phases. Each phase builds on the previous one.
 
-## Phase 1 — Golang fundamentals for systems (mostly macOS)
+## Phase 1 — Golang fundamentals for systems
 
 ### Goal
 be comfortable writing Go programs.
@@ -93,7 +93,7 @@ Mini-project ideas
 - Build a “config rollout” toy: update a key, watchers apply it to a local file and report status
 - Build a failure demo: kill etcd leader (3-node cluster) and observe re-election + watch continuity
 
-## Phase 4 — containerd + controlling containers (VM strongly recommended)
+## Phase 4 — containerd + controlling containers
 
 ### Goal
 understand the container runtime boundary and control containers programmatically.
