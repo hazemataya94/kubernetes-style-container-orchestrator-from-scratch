@@ -6,12 +6,12 @@ This is a **learning-by-building** project to understand how Kubernetes works in
 by implementing a minimal, Kubernetes-style container orchestrator in Go.
 
 The goal is **not** to re-implement Kubernetes, but to learn the core ideas behind it, including:
-- declarative APIs
-- desired vs actual state
-- reconciliation loops
-- watches
-- control planes
-- container runtimes
+- Declarative APIs
+- Desired vs actual state
+- Reconciliation loops
+- Watches
+- Control planes
+- Container runtimes
 
 ---
 
@@ -41,13 +41,13 @@ The project is structured as a series of learning phases. Each phase builds on t
 ## Phase 1 — Golang fundamentals for systems
 
 ### Goal
-be comfortable writing Go programs.
+Become comfortable writing Go programs.
 
 ### Topics
-- concurrency (goroutines, channels)
-- networking (HTTP, gRPC)
+- Concurrency (goroutines, channels)
+- Networking (HTTP, gRPC)
 - APIs, CLIs, testing
-- controller-style loops
+- Controller-style loops
 
 ### Mini-project ideas
 - Build a small REST API server with CRUD + watch-like long polling 
@@ -59,13 +59,13 @@ be comfortable writing Go programs.
 ## Phase 2 — Linux kernel interfaces
 
 ### Goal
-understanding kernel, how to interact with it, and what containers actually rely on.
+Understand kernel, how to interact with it, and what containers actually rely on.
 
 ### Topics
-- processes, signals, `/proc`
-- namespaces and cgroups
-- filesystem mounts
-- observability tools (`strace`, `lsof`, `ip`, `ss`)
+- Processes, signals, `/proc`
+- Namespaces and cgroups
+- Filesystem mounts
+- Observability tools (`strace`, `lsof`, `ip`, `ss`)
 - Go programs that interact with kernel concepts
 
 ### Mini-project ideas
@@ -78,14 +78,14 @@ understanding kernel, how to interact with it, and what containers actually rely
 ## Phase 3 — etcd fundamentals
 
 ### Goal
-understand etcd as a strongly-consistent key-value store with watch semantics.
+Understand etcd as a strongly-consistent key-value store with watch semantics.
 
 ### Topics
 - Raft and leader election
 - MVCC and revisions
-- watches and event streams
+- Watches and event streams
 
-Mini-project ideas
+### Mini-project ideas
 
 - Build a Go etcd client: put/get/list + watch a prefix and print events
 - Build a controller reacting to etcd: watch desired/ keys → write status/ keys
@@ -96,7 +96,7 @@ Mini-project ideas
 ## Phase 4 — containerd + controlling containers
 
 ### Goal
-understand the container runtime boundary and control containers programmatically.
+Understand the container runtime boundary and control containers programmatically.
 
 ### Topics
 - OCI images vs containers
@@ -117,12 +117,12 @@ Build a minimal orchestrator using VMs -Virtual Machies- that feels like Kuberne
 
 ### Topics
 - API server
-- persistent state
-- reconciliation
-- node agents
-- control plane concepts
+- Persistent state
+- Reconciliation
+- Node agents
+- Control plane concepts
 
-Mini-project ideas
+### Mini-project ideas
 - Build an API server for Workload objects: Apply/Get/List/Delete + Status field
 - Build a reconciler: desired workloads → running containers via containerd + update status
 - Build a node-agent daemon: control plane assigns workloads → agent runs them locally
@@ -156,3 +156,9 @@ This project is inspired by:
 
 This project is actively evolving.
 Structure and implementations will change as understanding deepens.
+
+---
+
+## Author
+- Hazem Ataya
+- hazem.ataya94@gmail.com
