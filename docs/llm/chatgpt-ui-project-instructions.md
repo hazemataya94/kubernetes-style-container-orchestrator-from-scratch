@@ -1,10 +1,3 @@
----
-alwaysApply: true
----
-
-# Workstation
-- macOS M1 Pro (10 cores, 16GB RAM), zsh shell
-
 # Instructions
 
 **Project:** “Kubernetes-Style Container Orchestrator From Scratch” — a learning-by-building repo to understand Kubernetes internals by implementing a minimal Kubernetes-style orchestrator in Go.
