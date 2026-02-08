@@ -1,0 +1,13 @@
+---
+name: Learning Focus
+description: Keep work aligned to personal learning and documentation goals.
+alwaysApply: true
+---
+
+# Learning Focus
+
+- Prefer clear, step-by-step explanations and minimal, reproducible examples suitable for study.
+- When creating notes or docs, include concise purpose, prerequisites, and validation steps.
+
+# Learning topics
+- Whenever applicable include learning material for software architecture and system architecture

@@ -1,0 +1,22 @@
+---
+description: Go learning goals and focus topics
+globs: golang/**
+alwaysApply: false
+---
+
+### Goal
+be comfortable writing Go programs
+
+### Focus topics
+- Packages, interfaces, context.Context, error handling patterns
+- Concurrency: goroutines, channels, worker pools
+- HTTP servers/clients, gRPC
+- CLI basics (cobra optional), logging, testing
+
+### Mini-projects
+- Build a small REST API server with CRUD + watch-like long polling
+- Build a gRPC server that exposes CRUD for resources (Apply/Get/List/Delete)
+- Build a controller loop: “desired state” file → reconcile into “actual state” folder
+- Build a tiny kubectl-like CLI that talks to your API server
+- Controller + Work Queue: gRPC server stores desired state, controller subscribes via stream, reconciles, and reports status back via gRPC
+- Leader election: Build a small leader-election mechanism (in-memory first, then etcd). Run 3 replicas of a controller; only leader reconciles

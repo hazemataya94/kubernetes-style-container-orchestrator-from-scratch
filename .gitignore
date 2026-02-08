@@ -1,0 +1,55 @@
+# ======================
+# macOS
+# ======================
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ======================
+# Go
+# ======================
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binaries
+*.test
+
+# Go workspace / build output
+bin/
+dist/
+out/
+
+# Go coverage
+coverage.out
+coverage.txt
+
+# ======================
+# Logs & runtime files
+# ======================
+*.log
+*.pid
+
+# ======================
+# Environment / secrets
+# ======================
+.env
+.env.*
+*.key
+*.pem
+
+# ======================
+# OS / temp
+# ======================
+tmp/
+temp/
+
+# ======================
+# Container / runtime artifacts
+# ======================
+# containerd / experiments
+snapshots/
+containers/

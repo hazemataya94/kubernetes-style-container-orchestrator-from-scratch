@@ -1,0 +1,5 @@
+---
+globs: golang/**
+alwaysApply: false
+---
+- Use golang
