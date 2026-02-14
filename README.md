@@ -154,8 +154,9 @@ This project is inspired by:
 
 ## Status
 
-This project is actively evolving.
-Structure and implementations will change as understanding deepens.
+This project is agile, structure and implementations will change as understanding deepens.
+
+Learning Paused.
 
 ---
 
