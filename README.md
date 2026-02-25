@@ -1,3 +1,12 @@
+## Status
+
+Learning Paused.
+
+Working on:
+https://github.com/hazemataya94/hape-overview
+
+---
+
 # Kubernetes-Style Container Orchestrator From Scratch
 
 > From Linux primitives to Kubernetes-style control planes
@@ -149,14 +158,6 @@ This project is inspired by:
 - containerd and OCI runtimes
 - distributed systems principles
 - learning from first principles
-
----
-
-## Status
-
-This project is agile, structure and implementations will change as understanding deepens.
-
-Learning Paused.
 
 ---
 
